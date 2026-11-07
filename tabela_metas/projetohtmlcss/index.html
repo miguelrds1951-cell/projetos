@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Hábitos</title>
+    <!-- O caminho aponta direto para o ficheiro na mesma pasta -->
+    <link rel="stylesheet" href="styles//style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meus Hábitos</h1>
+            <p>Acompanhe suas metas</p>
+        </header>
+
+        <form id="habit-form">
+            <input 
+                type="text" 
+                id="habit-input" 
+                placeholder="Ex: Estudar Java..." 
+                required 
+                autocomplete="off"
+            >
+            <input 
+                type="number" 
+                id="target-input" 
+                placeholder="Meta (dias)" 
+                min="1" 
+                max="365" 
+                required
+            >
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hábito</th>
+                        <th>Meta</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="habit-table-body">
+                    <!-- Preenchido pelo script.js -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="scripts//scriptjs.js"></script>
+</body>
+</html>
